@@ -10,8 +10,8 @@ class BookingDateNavigation extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       color: Theme.of(context).dialogBackgroundColor,
-      child: Row(
-        children: const [
+      child: const Row(
+        children: [
           Expanded(child: DayNavigation()),
           SchoolYearDropdown(),
         ],

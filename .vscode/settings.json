@@ -22,8 +22,8 @@
   "dart.flutterGenerateLocalizationsOnSave": "manual",
   "debug.inlineValues": "on",
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
   },
   "editor.formatOnSave": true,
   "editor.tabSize": 2,

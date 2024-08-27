@@ -18,8 +18,8 @@ class _BookingsPageState extends State<BookingsPage>
   Widget build(BuildContext context) {
     super.build(context);
 
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         BookingDateNavigation(),
         ScrollableTimeTable(),
       ],

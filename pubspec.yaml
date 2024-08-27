@@ -12,7 +12,7 @@ environment:
 dependencies:
   collection: any
   cupertino_icons: ^1.0.5
-  fl_chart: ^0.61.0
+  fl_chart: ^0.69.0
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -32,7 +32,7 @@ dev_dependencies:
   dart_code_metrics: ^5.7.0
   flutter_test:
     sdk: flutter
-  very_good_analysis: ^4.0.0+1
+  very_good_analysis: ^6.0.0
 
 flutter:
   generate: true

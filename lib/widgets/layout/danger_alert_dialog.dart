@@ -39,16 +39,16 @@ class DangerAlertDialog extends StatelessWidget {
             Navigator.of(context).pop(true);
           },
           style: ButtonStyle(
-            overlayColor: MaterialStateProperty.resolveWith<Color?>((states) {
-              if (states.contains(MaterialState.hovered)) {
+            overlayColor: WidgetStateProperty.resolveWith<Color?>((states) {
+              if (states.contains(WidgetState.hovered)) {
                 return Colors.red.withOpacity(0.1);
-              } else if (states.contains(MaterialState.pressed)) {
+              } else if (states.contains(WidgetState.pressed)) {
                 return Colors.red.withOpacity(0.15);
               }
 
               return null;
             }),
-            padding: MaterialStateProperty.all(buttonPadding),
+            padding: WidgetStateProperty.all(buttonPadding),
           ),
           child: Text(
             (okText ?? materialLocalizations.deleteButtonTooltip).toUpperCase(),

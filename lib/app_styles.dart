@@ -75,11 +75,11 @@ ThemeData darkTheme() {
   );
 }
 
-MaterialStateProperty<Color?> _resolveSelectedMaterialState(
+WidgetStateProperty<Color?> _resolveSelectedMaterialState(
   Color color,
 ) {
-  return MaterialStateProperty.resolveWith((states) {
-    if (states.contains(MaterialState.selected)) return color;
+  return WidgetStateProperty.resolveWith((states) {
+    if (states.contains(WidgetState.selected)) return color;
 
     return null;
   });
